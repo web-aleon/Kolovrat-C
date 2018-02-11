@@ -1,0 +1,231 @@
+/* VAR */
+$fontColor: #000;
+
+/*MIXINS*/
+@mixin flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* FONTS */ 
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/exo/Exo2.0-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/exo/Exo2.0-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/exo/Exo2.0-SemiBold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/exo/Exo2.0-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/exo/Exo2.0-Thin.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/exo/Exo2.0-Italic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Myriad";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Myriad";
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Myriad";
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Myriad";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* COMMON */
+@media (max-width: 1255px){
+  
+}
+@media (max-width: 1006px){
+	
+}
+@media (max-width: 767px){
+	
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  color: $fontColor;
+  font-family: 'Exo', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+p, h1, h2, h3 {
+  margin: 0;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (max-width: 1255px){
+    width: 960px; /* .8 */
+  }
+  @media (max-width: 1006px){
+    width: 768px; /*0.8*/
+    padding: 0 10px;
+    max-width: 100%;
+  }
+  @media (max-width: 767px){
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.clearfix{
+  &:after, &:before{
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
+  &:after{
+    clear: both;
+  }
+}
+.mobile_only {
+  display: none;
+  
+  @media (max-width: 767px){
+    display: block;  
+  }
+}
+.flex {
+  display: flex;
+}
+.button {
+  // background-color: #ee5730;
+  // text-transform: uppercase;
+  // color: #fff;
+  // border: none;
+  // outline: none;
+  // border-radius: 50px;
+}
+.bold {
+  font-weight: bold;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* HEADER */
+.header {
+  
+  
+  .flex {
+    justify-content: space-between;
+
+    @media (max-width: 767px){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .logo {
+    margin: 0;
+    
+    img {
+      @media (max-width: 1255px){
+
+      }
+      @media (max-width: 1006px){
+
+      }
+    }
+  }
+  .header-text {
+    // margin-top: 48px;
+    // text-align: center;
+    // font-size: 20px;
+    // line-height: 27px;
+    // text-shadow: 1px 1px 1px #000;
+    // color: #fff;
+
+    @media (max-width: 1255px){
+      
+    }
+    @media (max-width: 1006px){
+      
+    }
+    @media (max-width: 767px){
+      
+    }
+  }
+   
+  .phone {
+    // margin-top: 32px;
+    // margin-bottom: 7px;
+    // color: #66bcff;
+    // font-size: 34px;
+    // line-height: 1em;
+    // text-shadow: 0px 0px 1px #000;
+
+    @media (max-width: 1255px){
+      
+    }
+    @media (max-width: 1006px){
+      
+    }
+    @media (max-width: 767px){
+      
+    }
+  }
+}
+
+/*  */

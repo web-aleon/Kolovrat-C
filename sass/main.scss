@@ -683,6 +683,13 @@ p, h1, h2, h3 {
       position: relative;
       cursor: pointer;
 
+      &:nth-child(even) .item-overlay{
+        border: 3px solid #f2cd46;
+      }
+      &:nth-child(odd) .item-overlay{
+        border: 3px solid #353533;
+      }
+
       @media (max-width: 767px){
         width: 50%;
       }

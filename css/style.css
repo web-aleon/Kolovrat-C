@@ -940,6 +940,14 @@ h3 {
   cursor: pointer;
 }
 
+.portfolio-section .items .item:nth-child(even) .item-overlay {
+  border: 3px solid #f2cd46;
+}
+
+.portfolio-section .items .item:nth-child(odd) .item-overlay {
+  border: 3px solid #353533;
+}
+
 @media (max-width: 767px) {
   .portfolio-section .items .item {
     width: 50%;

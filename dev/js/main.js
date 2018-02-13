@@ -15,19 +15,11 @@ $(document).ready(function() {
 	  responsive: [
 	    {
 	      breakpoint: 768,
-	      settings: {
-	        arrows: false,
+ 		  settings: {
+	        arrows: true,
 	        centerMode: true,
 	        centerPadding: '0px',
-	        slidesToShow: 3
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        arrows: false,
-	        centerMode: true,
-	        centerPadding: '0px',
+	        variableWidth: false,
 	        slidesToShow: 1
 	      }
 	    }
@@ -50,10 +42,12 @@ $(document).ready(function() {
 		var data_text = event.currentTarget.getAttribute('data-text');
 		var data_btext = event.currentTarget.getAttribute('data-btext');
 		var data_from = event.currentTarget.getAttribute('data-from');
+		var data_ltext = event.currentTarget.getAttribute('data-ltext').trim();
 
 		$('#modal_title').text(data_text);
 		$('#modal_button').text(data_btext);
 		$('#modal_from').val(data_from);
+		$('#modal_ltext').html(data_ltext);
 
 		$('#overlay').fadeIn(400, 
 		 	function(){ 

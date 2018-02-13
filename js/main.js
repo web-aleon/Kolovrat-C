@@ -1,12 +1,50 @@
 'use strict';
 
 $(document).ready(function () {
+
+	/* SLICK SLIDER */
+	$('#testiSlider').slick({
+		asNavFor: '#textSlider',
+		centerMode: true,
+		centerPadding: '0px',
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		infinite: true,
+		variableWidth: true,
+		focusOnSelect: true,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '0px',
+				slidesToShow: 3
+			}
+		}, {
+			breakpoint: 480,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '0px',
+				slidesToShow: 1
+			}
+		}]
+	});
+
+	$('#textSlider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '#testiSlider'
+	});
+
 	$('.wbh_modal').click(function (event) {
 		event.preventDefault();
 
-		var data_text = event.target.getAttribute('data-text');
-		var data_btext = event.target.getAttribute('data-btext');
-		var data_from = event.target.getAttribute('data-from');
+		var data_text = event.currentTarget.getAttribute('data-text');
+		var data_btext = event.currentTarget.getAttribute('data-btext');
+		var data_from = event.currentTarget.getAttribute('data-from');
 
 		$('#modal_title').text(data_text);
 		$('#modal_button').text(data_btext);
@@ -27,7 +65,7 @@ $(document).ready(function () {
 	}
 
 	$("form").submit(function (event) {
-		console.log('qwe');
+
 		$.ajax({
 			type: "POST",
 			url: "../send.php",

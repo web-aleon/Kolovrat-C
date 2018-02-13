@@ -8,6 +8,7 @@
     <title>Коловрат</title>
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -62,7 +63,7 @@
         <h2 class="title">НАШИ УСЛУГИ</h2>
         <div class="items flex">
           <div class="item item-1">
-            <a href="#" class="item-inner">
+            <a href="#" class="item-inner wbh_modal" data-text="Закажи ремонт бытовой техники" data-btext="Заказать" data-from="Услуги - Ремонт бытовой техники">
               <div class="top flex">
                 <p class="num">1</p>
                 <div class="lines">
@@ -77,7 +78,7 @@
             </a>
           </div>
           <div class="item item-2">
-            <a href="#" class="item-inner">
+            <a href="#" class="item-inner wbh_modal" data-text="Закажи ремонт цифровой техники" data-btext="Заказать" data-from="Услуги - Ремонт цифровой техники">
               <div class="top flex">
                 <p class="num">2</p>
                 <div class="lines">
@@ -92,7 +93,7 @@
             </a>
           </div>
           <div class="item item-3">
-            <a href="#" class="item-inner">
+            <a href="#" class="item-inner wbh_modal" data-text="Закажи ремонт компьютеров" data-btext="Заказать" data-from="Услуги - Ремонт компьютеров">
               <div class="top flex">
                 <p class="num">3</p>
                 <div class="lines">
@@ -112,7 +113,71 @@
 
 <!-- PORTFOLIO SECTION -->
     <section class="portfolio-section" id="portfolio">
-      
+      <div class="container">
+        <h2 class="title">ФОТООТЧЕТЫ ВЫПОЛНЕННЫХ РАБОТ</h2>
+        <div class="items flex">
+          <div class="item">
+            <img src="img/portfolio-1.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт кондиционера на Тельмана 9</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/portfolio-2.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт телевизора на Алагирской 19</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/portfolio-3.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт стиральной машины на Щегрена 3</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/portfolio-4.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт пылесоса на Владикавказской 46</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/portfolio-5.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт ноутбука на Димитрова 4</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/portfolio-6.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт телефона на Калоева 16</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/portfolio-7.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт колонки на Доватора 7</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/portfolio-8.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт микроволновой печи на Пожарского 14</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/portfolio-9.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт холодильника на проспекте Коста 292</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/portfolio-10.png" alt="" class="item-image">
+            <div class="item-overlay flex">
+              <p class="item-text">Ремонт стиральной машины на Московской 25</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 <!-- ADVANTAGES SECTION -->
@@ -145,11 +210,191 @@
     </section>
     <div class="zebra"></div>
 
+<!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <h2 class="title">Отзывы</h2>
+        <div class="content">
+          <div class="slider-wrapper">
 
+            <div class="slider" id="testiSlider">
+              
+              <div class="slider-item">
+                <img src="img/testi-6.png" alt="">
+              </div>
+              <div class="slider-item">
+                <img src="img/testi-7.png" alt="">
+              </div>
+              <div class="slider-item">
+                <img src="img/testi1.png" alt="">
+              </div>
+              <div class="slider-item">
+                <img src="img/testi-2.png" alt="">
+              </div>
+              <div class="slider-item">
+                <img src="img/testi-3.png" alt="">
+              </div>
+              <div class="slider-item">
+                <img src="img/testi-4.png" alt="">
+              </div>
+              <div class="slider-item">
+                <img src="img/testi-5.png" alt="">
+              </div>
+              
+            </div>
+
+          </div>
+          
+          <div class="text-slider" id="textSlider">
+            
+            <div class="text-block">
+              <h3 class="name">Петр Петрович</h3>
+              <div class="divider"></div>
+              <p class="text">Мое личное мнение – отличное ремонтное предприятие «Коловрат -С». В квартире жара страшная, духота, а кондиционер сдох - начала капать вода. Позвонил мастерам по ремонту бытовой техники, которые всегда спасают в критические моменты и они за два часа реанимировали подавач холода — починили и почистили.</p>
+            </div>
+
+            <div class="text-block">
+              <h3 class="name">Александр Тимофеевич</h3>
+              <div class="divider"></div>
+              <p class="text">Стиральная машинка меня достала — как только закончился гарантийный срок постоянные перебои в работе.Замучался приглашать мастеров. А тут сосед дал телефон «Коловрат -С». Пришел мастер и устранил все неполадки. Нашу стиральную проблему как корова языком слизала — два года стиралка работает и даже ни малейшего намека на сбои. Есть же люди с золотыми руками! Спасибо!</p>
+            </div>
+
+            <div class="text-block">
+              <h3 class="name">Костя</h3>
+              <div class="divider"></div>
+              <p class="text">Первый раз воспользовался услугами «Коловрат -С».Сделал заявку и уже через час приехал мастер.Сделал все быстро, во всем чувствовалось, что работу выполняет мастер со стажем.Все работает отлично. Спасибо профессиональной компании за профессионалов!</p>
+            </div>
+
+            <div class="text-block">
+              <h3 class="name">Ирина Сергеевна</h3>
+              <div class="divider"></div>
+              <p class="text">В «Коловрат -С» - толковые мастера бытовой техники.Когда пылесос перестал работать, думала, что за его ремонт уже никто не возьмется, ведь срок эксплуатации достаточно велик.Но так как денег на новый не было, решила рискнуть.Мастер пришел в день вызова, быстро нашел причину потомки и устранил ее за несколько минут.И дал словесную гарантию, что проработает еще не один год.Молодцы! Так держать!</p>
+            </div>
+
+            <div class="text-block">
+              <h3 class="name">Владимир</h3>
+              <div class="divider"></div>
+              <p class="text">Меня в работе ремонтной организации «Коловрат -С» устраивает все — мастер приехал вовремя, диагностику колонки сделал быстро, с ценой на месте тоже не стал мудрить, как обычно, бывает — назвал сумму о которой договаривались во время предварительной беседы.</p>
+            </div>
+
+            <div class="text-block">
+              <h3 class="name">Степан Степанович</h3>
+              <div class="divider"></div>
+              <p class="text">С таким сервисом встретился впервые — мастер «Коловрат -С» прибыл через два часа после вызова.Сам забрал и сам привез после ремонта бытовой прибор. Никаких сбоев в работе не наблюдается. Стоимость услуги тоже приятно удивила.</p>
+            </div>
+
+            <div class="text-block">
+              <h3 class="name">Антонина Григорьевна</h3>
+              <div class="divider"></div>
+              <p class="text">Ребята из ремонтной организации «Коловрат -С» не только настоящие мастера своего дела, но и люди, умеющие чувствовать чужую боль.Утром 31 декабря экран моего телевизора почернел.Я - одинокая пенсионерка, для меня телевизор в новогоднюю ночь — единственный гость, собеседник и массовик - затейник.И мастера поняли меня - через два часа они приступили к ремонту и в Новогоднюю ночь я была не одна. Большое вам спасибо!</p>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+<!-- HOW WORK SECTION -->
+    <section class="how-section" id="how">
+      <div class="how-inner">
+        <div class="container">
+          <h2 class="title">КАК МЫ РАБОТАЕМ</h2>
+          <div class="content flex">
+            <div class="items">
+              <div class="item">
+                <span class="num">1</span>
+                <span class="text">Заявка или звонок по телефону</span>
+              </div>
+              <div class="item">
+                <span class="num">2</span>
+                <span class="text">Консультация и выезд к заказчику</span>
+              </div>
+              <div class="item">
+                <span class="num">3</span>
+                <span class="text">Проведение ремонтных работ</span>
+              </div>
+              <div class="item">
+                <span class="num">4</span>
+                <span class="text">Подписание гарантийного талона</span>
+              </div>
+            </div>
+            <img src="img/how-work-img.png" alt="" class="how-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- REQUEST SECTION -->
+    <section class="request-section" id="request">
+      <div class="container">
+        <div class="h2 title">ОСТАВЬТЕ ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИЕ 30 МИНУТ</div>
+        <form action="" class="request-form flex">
+          
+          <div class="input-wrap">
+            <input type="text" name="name" placeholder="ИМЯ" required="required">
+          </div>
+          <div class="input-wrap">
+            <input type="tel" name="tel" placeholder="ТЕЛЕФОН" required="required">
+          </div>
+          <input type="hidden" name="from" value="Заявка с последнего блока">
+          <div class="input-wrap">
+            <button>ОТПРАВИТЬ</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+<!-- FOOTER -->
+    <div class="zebra"></div>
+    <footer class="footer" id="footer">
+      <div class="container flex">
+        <p class="copy">Copy Rights © 2012 “Коловрат-С” All Rights Reserved</p>
+        <div class="molnium flex">
+          <p class="text">Разработка и продвижение сайта</p>
+          <a href="http://molnium.ru/" class="molnium-logo"><img src="img/molnium.png" alt="" class="molnium-image"></a>
+        </div>
+      </div>
+    </footer>
+
+<div id="modal_form">
+      <span id="modal_close">+</span> 
+      <table class="modal_table_2col">
+        <tr>
+
+          <td class="left_col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro laudantium nobis ducimus dolore..</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sunt, harum dolorum iure, ipsum suscipit. Veniam doloribus voluptatibus, consequuntur harum!</p>
+          </td>
+
+          <td>
+            <h3 id="modal_title">Заявка на презентацию франшизы</h3>
+            <p class="modal_subtitle">Просто оставьте ваши данные и мы свяжемся с Вами в ближайшее время</p>
+            <form action="" class="flex">
+              <div class="input-wrap">
+                <input type="text" name="name" id="" placeholder="Имя" required="required">
+              </div>
+              <div class="input-wrap">
+                <input type="tel" name="tel" id="" placeholder="Телефон" required="required">
+              </div>
+              <!-- <div class="input-wrap">
+                <input type="email" name="email" id="" required="required">
+              </div> -->
+              <input id="modal_from" type="hidden" name="from" value="form">
+              <button id="modal_button" class="button">Отправить заявку</button>
+            </form>
+          </td>
+
+        </tr>
+      </table>
+  </div>
+<div id="overlay"></div>
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/main.js"></script>
   </body>

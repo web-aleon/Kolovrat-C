@@ -148,7 +148,7 @@ h3 {
 /* HEADER */
 
 .header {
-  padding: 22px 0 18px;
+  padding: 22px 0;
   background-color: #fff;
   font-weight: bold;
 }
@@ -222,110 +222,32 @@ h3 {
   }
 }
 
-.header .header-contact {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 25px;
+.header .phone {
+  font-size: 35px;
+  line-height: 26px;
+  margin-top: 40px;
 }
 
 @media (max-width: 1255px) {
-  .header .header-contact {
-    font-size: 20px;
+  .header .phone {
+    font-size: 28px;
+    line-height: 22px;
+    margin-top: 32px;
   }
 }
 
 @media (max-width: 1006px) {
-  .header .header-contact {
-    font-size: 16px;
+  .header .phone {
+    font-size: 22px;
+    line-height: 19px;
+    margin-top: 25px;
   }
 }
 
 @media (max-width: 767px) {
-  .header .header-contact {
+  .header .phone {
     text-align: center;
     margin-top: 20px;
-  }
-}
-
-.header .header-contact_item {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-@media (max-width: 767px) {
-  .header .header-contact_item {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-  }
-}
-
-.header .header-contact_item:first-child {
-  margin-bottom: 12px;
-}
-
-@media (max-width: 1255px) {
-  .header .header-contact_item:first-child {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 1006px) {
-  .header .header-contact_item:first-child {
-    margin-bottom: 8px;
-  }
-}
-
-.header .header-contact .phone {
-  vertical-align: middle;
-}
-
-.header .header-contact .phone_img {
-  margin-right: 20px;
-}
-
-@media (max-width: 1255px) {
-  .header .header-contact .phone_img {
-    height: 22px;
-    width: auto;
-    margin-right: 16px;
-  }
-}
-
-@media (max-width: 1006px) {
-  .header .header-contact .phone_img {
-    height: 18px;
-    margin-right: 13px;
-  }
-}
-
-.header .header-contact .time_img {
-  margin-right: 16px;
-}
-
-@media (max-width: 1255px) {
-  .header .header-contact .time_img {
-    height: 27px;
-    width: auto;
-    margin-right: 13px;
-  }
-}
-
-@media (max-width: 1006px) {
-  .header .header-contact .time_img {
-    height: 22px;
-    margin-right: 10px;
   }
 }
 
